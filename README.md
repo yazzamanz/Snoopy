@@ -41,4 +41,10 @@ Once this deploys successfully, we can:
 
 ---
 
-*Created: March 30, 2026*
+## Auto-Deploy Status
+
+✅ SSH deploy key configured  
+✅ Git push enabled  
+✅ Netlify auto-deploy active  
+
+*Last updated: March 30, 2026*
