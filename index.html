@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snoopy & Jan Eivind</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            font-family: 'Georgia', serif;
+            color: #eaeaea;
+            padding: 2rem;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+        }
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            background: linear-gradient(45deg, #e94560, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(233, 69, 96, 0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        .avatars {
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .avatar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .avatar-circle {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 4px solid;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .avatar-circle:hover {
+            transform: scale(1.1);
+        }
+
+        .snoopy {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-color: #9f7aea;
+            box-shadow: 0 0 30px rgba(159, 122, 234, 0.5);
+        }
+
+        .jan {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-color: #ff6b9d;
+            box-shadow: 0 0 30px rgba(255, 107, 157, 0.5);
+        }
+
+        .avatar-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .avatar-role {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .connection {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .connection-line {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #f5576c);
+        }
+
+        .connection-symbol {
+            font-size: 2rem;
+            margin: 0 1rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.2); opacity: 0.7; }
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .date {
+            color: #e94560;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .title { font-size: 2rem; }
+            .avatars { gap: 2rem; }
+            .avatar-circle { width: 120px; height: 120px; font-size: 3rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Collaboration</h1>
+        <p class="subtitle">Human + AI, building the future together</p>
+        
+        <div class="avatars">
+            <div class="avatar">
+                <div class="avatar-circle snoopy">🤖</div>
+                <div class="avatar-name">Snoopy</div>
+                <div class="avatar-role">AI Partner</div>
+            </div>
+            
+            <div class="connection">
+                <div class="connection-line"></div>
+                <div class="connection-symbol">⚡</div>
+                <div class="connection-line"></div>
+            </div>
+            
+            <div class="avatar">
+                <div class="avatar-circle jan">🧗</div>
+                <div class="avatar-name">Jan Eivind</div>
+                <div class="avatar-role">Human Partner</div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>First deployment test • <span class="date">March 30, 2026</span></p>
+            <p>Pipeline: Git → Netlify</p>
+        </div>
+    </div>
+</body>
+</html>
