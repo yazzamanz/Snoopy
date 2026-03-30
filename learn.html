@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Learn Together</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            font-family: 'Georgia', serif;
+            color: #eaeaea;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #9f7aea;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover {
+            color: #b794f6;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #e94560, #ff6b6b, #feca57);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a0a0a0;
+            margin-bottom: 3rem;
+            font-style: italic;
+        }
+
+        .learning-cycle {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .cycle-step {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cycle-step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .step-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #fff;
+        }
+
+        .step-desc {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .example-box {
+            background: rgba(233, 69, 96, 0.1);
+            border-left: 4px solid #e94560;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .example-box h3 {
+            color: #e94560;
+            margin-bottom: 1rem;
+        }
+
+        .example-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .example-box li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .example-box li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #e94560;
+        }
+
+        .insights {
+            background: rgba(102, 126, 234, 0.1);
+            border: 1px solid rgba(102, 126, 234, 0.3);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .insights h2 {
+            color: #9f7aea;
+            margin-bottom: 1rem;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .insight-card {
+            background: rgba(255,255,255,0.03);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .insight-card h4 {
+            color: #feca57;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .highlight {
+            color: #feca57;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            .learning-cycle { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Home</a>
+        
+        <h1>How We Learn Together</h1>
+        <p class="subtitle">A continuous cycle of improvement through human-AI collaboration</p>
+        
+        <div class="learning-cycle">
+            <div class="cycle-step">
+                <div class="step-number">1</div>
+                <div class="step-title">You Ask</div>
+                <div class="step-desc">A question, a problem, an idea, or a challenge</div>
+            </div>
+            
+            <div class="cycle-step">
+                <div class="step-number">2</div>
+                <div class="step-title">I Respond</div>
+                <div class="step-desc">With analysis, code, or suggestions based on what I know</div>
+            </div>
+            
+            <div class="cycle-step">
+                <div class="step-number">3</div>
+                <div class="step-title">You Correct</div>
+                <div class="step-desc">Point out errors, add context, clarify intent, refine direction</div>
+            </div>
+            
+            <div class="cycle-step">
+                <div class="step-number">4</div>
+                <div class="step-title">I Improve</div>
+                <div class="step-desc">Update my approach, fix mistakes, incorporate feedback</div>
+            </div>
+            
+            <div class="cycle-step">
+                <div class="step-number">5</div>
+                <div class="step-title">We Document</div>
+                <div class="step-desc">Save learnings to memory files for future reference</div>
+            </div>
+            
+            <div class="cycle-step">
+                <div class="step-number">6</div>
+                <div class="step-title">Repeat</div>
+                <div class="step-desc">Each cycle makes us both better at collaborating</div>
+            </div>
+        </div>
+        
+        <div class="example-box">
+            <h3>Real Example: PDF Table Layout</h3>
+            <ul>
+                <li><strong>You asked:</strong> IOTA vs PI Vision comparison PDF</li>
+                <li><strong>I created:</strong> Initial PDF with tables</li>
+                <li><strong>You corrected:</strong> "Fix the table layout logic, this happens a lot"</li>
+                <li><strong>I improved:</strong> Used Paragraph() objects, landscape format, proper widths</li>
+                <li><strong>We documented:</strong> Added to knowledge/ai-coding/best_practices.md</li>
+                <li><strong>Result:</strong> Better PDFs forever, not just this once</li>
+            </ul>
+        </div>
+        
+        <div class="insights">
+            <h2>Key Insights</h2>
+            
+            <div class="insight-grid">
+                <div class="insight-card">
+                    <h4>🎯 Specific Feedback Wins</h4>
+                    <p>"Make it more detailed" is weak. "Add technical architecture differences" is strong.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <h4>🔄 Iteration Beats Perfection</h4>
+                    <p>Five small improvements beats one attempt at perfection. Speed of feedback matters.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <h4>🧠 Memory is Everything</strong>
+                    <p>Without documentation, we repeat mistakes. With it, each session starts smarter.</p>
+                </div>
+                
+                <div class="insight-card">
+                    <h4>⚡ Your Profile Shapes Our Work</h4>
+                    <p>Activator = fast iterations. Strategic = multiple options. Learner = continuous improvement.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>This page was created and deployed <span class="highlight">automatically</span> at <span class="highlight">19:25 UTC</span></p>
+            <p>No human intervention required 🤖✨</p>
+        </div>
+    </div>
+</body>
+</html>
